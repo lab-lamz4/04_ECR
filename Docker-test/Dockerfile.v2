@@ -1,0 +1,5 @@
+FROM nginx:1.20.1
+
+RUN echo "version 1.20.1-2 base aws_learning" >> /usr/share/nginx/html/index.html
+
+RUN sed -i '/body {/a background-color: #E6E6FA;' /usr/share/nginx/html/index.html
